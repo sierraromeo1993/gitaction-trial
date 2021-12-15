@@ -14,5 +14,5 @@ test("Im checking if it does not allow merge",() => {
     
     let arrObj =  message.test()
 
-    expect(arrObj).toBe("just")
+    expect(arrObj).toBe("just CI")
 })
