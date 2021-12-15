@@ -4,7 +4,6 @@ const message  =  require("../githubactions/util/genlib")
 const http = require('http');
 
 const requestListener = function (req, res) {
-  console.log("h")
   res.writeHead(200);
   res.end(message);
 }
