@@ -8,11 +8,11 @@ const message = require("../util/genlib")
 
 
 
-test("Im just checking to see that I can run CI/CD motions",() => {
+test("Im checking if it does not allow merge",() => {
 
     
     
     let arrObj =  message.test()
 
-    expect(arrObj).toBe("just CI")
+    expect(arrObj).toBe("just")
 })
