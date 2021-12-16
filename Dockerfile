@@ -22,7 +22,7 @@ WORKDIR /app
 # where you currently are from your local machine"." 
 # and copy it into the /app directory we just created 
 
-COPY . .
+COPY . /
 
 RUN npm install
 
@@ -32,7 +32,7 @@ RUN npm install
 # communicate with the docker container and all
 # the files/code inside of it
 
-EXPOSE 3000
+EXPOSE 5000
 
 
 # We designate the first command to be run at the
@@ -44,4 +44,4 @@ EXPOSE 3000
 
 ENTRYPOINT [ "node" ]
 
-CMD ["app.js"]
+CMD ["main.js"]
